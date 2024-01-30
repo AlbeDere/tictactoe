@@ -1,0 +1,45 @@
+body {
+    background-color: black;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    height: 100vh; 
+}
+
+#board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px); 
+    grid-template-rows: repeat(3, 100px); 
+    gap: 5px;
+    margin-bottom: 20px; 
+    justify-content: center; 
+    color: white; 
+    font-size: 24px; 
+}
+
+.cell {
+    font-size: 40px;
+    text-align: center;
+    padding: 20px;
+    border: 2px solid white; 
+    cursor: pointer;
+    color: white; 
+    width: 100px; 
+    height: 100px; 
+    box-sizing: border-box; 
+}
+
+.cell:hover {
+    background-color: #333; 
+}
+
+#reset {
+    display: block;
+    margin-top: 400px; 
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    color: white; 
+    background-color: #333; 
+    position: absolute;
+}
